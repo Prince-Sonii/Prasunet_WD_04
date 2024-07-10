@@ -1,17 +1,9 @@
-/* @font-face {
-    font-family: "CustomFont";
-    src: url("font.ttf");
-    src: url("CustomFont.woff") format("woff"),
-    url("CustomFont.otf") format("opentype"),
-    url("CustomFont.svg#filename") format("svg");
-    } */
 * {
     margin: 0;
     padding: 0;
 }
 body {
     background-color: #000;
-    /* font-family: "CustomFont"; */
 }
 .nav_container {
     width: 100%;
@@ -45,8 +37,17 @@ body {
     cursor: pointer;
     background-color: rgba(255, 255, 255, .2);
     border-radius: 2vw;
-    /* border: 1px solid rgba(255, 255, 255, .3); */
-    /* outline: none; */
+}
+.back_div {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    overflow: auto;
+}
+.back_scroller {
+    height: 550vh;
 }
 .sub_body {
     position: sticky;
@@ -57,9 +58,8 @@ body {
     flex-direction: column;
     align-items: center;
     border-radius: 2vw;
-    overflow-y:auto;
+    overflow-y:hidden;
     z-index: 90;
-    /* filter: drop-shadow(0px 0px 12px silver); */
 }
 .sub_body::-webkit-scrollbar {  
     display: none;
@@ -68,6 +68,7 @@ body {
     height: 81vh;
     margin-top: 12vw;
     padding: 0vw 5vw;
+    transition: all 2s;
 }
 .inner_body {
     width: 100%;
@@ -111,10 +112,6 @@ body {
     width: 100%;
     filter: drop-shadow(0px 0px 20px black);
 }
-.home {
-    /* visibility: hidden; */
-}
-
 /* ABOUT ME SECTION */
 .about_me {
     background-color: #253943;
@@ -134,10 +131,6 @@ body {
     font-weight: bold;
     text-align: justify;
     color: #bfaa97;
-}
-.about_me {
-    /* display: none; */
-    /* visibility: hidden; */
 }
 .skills {
     background-color: #5e353a;
@@ -160,22 +153,17 @@ body {
     gap: .5vw;
     padding: .8vw 1.8vw;
     background-color: rgb(198, 185, 185);
-    /* background-color:rgb(108, 51, 51); */
     border-radius: 1vw;
     transition:all .3s;
 }
 .skill_item:hover  {
     cursor: pointer;
     scale: 1.1;
-    /* filter: drop-shadow(0 0 6px #fffdef); */
     filter: drop-shadow(0 0 10px #000);
 }
 .skill_text {
     font-size: 1.2rem;
     font-weight: bold;
-}
-.skills {
-    /* visibility: hidden; */
 }
 /* PROJECTS SECTION */
 .projects {
