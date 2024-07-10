@@ -12,16 +12,16 @@
     <nav class="nav_container">
         <div class="nav_items">
             <ul class="nav_list">
-                <li>Home</li>
-                <li>About me</li>
-                <li>Projects</li>
-                <li>Contact me</li>
+                <li id="home_btn">Home</li>
+                <li id="about_btn">About me</li>
+                <li id="project_btn">Projects</li>
+                <li id="contact_btn">Contact me</li>
             </ul>
         </div>
     </nav>
     <main class="sub_body" id="main_section">
-        <section class="home inner_body">
-            <div class="home_container  container">
+        <section class="home inner_body" id="home_sec">
+            <div class="home_container container" id="inner_home_sec">
                 <div class="home_desc">
                     <div class="home_inner_desc">
                         <p class="big_heading">Hey, I am Prince Soni</p>
@@ -35,7 +35,7 @@
                 </div>
             </div>
         </section>
-        <section class="about_me inner_body">
+        <section class="about_me inner_body" id="about_sec">
             <div class="about_me_container container">
                 <div class="about_me_tag">
                     <p class="big_heading">About me</p>
@@ -60,7 +60,7 @@
                 </div>
             </div>
         </section>
-        <section class="skills inner_body">
+        <section class="skills inner_body" id="skills_sec">
             <div class="skills_container container">
                 <div class="skills_tag">
                     <p class="big_heading">My Skills</p>
@@ -105,8 +105,8 @@
                 </div>
             </div>
         </section>
-        <section class="projects inner_body">
-            <div class="projects container">
+        <section class="projects inner_body" id="project_sec">
+            <div class=" container">
                 <p class="project_tag big_heading">Projects</p>
                 <div class="project_lists">
                     <div class="tictactoe project_container">
@@ -128,7 +128,7 @@
                 </div>
             </div>
         </section>
-        <section class="contact inner_body">
+        <section class="contact inner_body" id="contact_sec">
             <div class="contact_me container">
                 <div class="contact_tag">
                     <p class="big_heading contact_me_tag">Contact me</p>
@@ -150,6 +150,13 @@
             </div>
         </section>
     </main>
+    <footer>
+        <div class="back_div" id="back_scroll">
+            <div class="back_scroller">
+                
+            </div>
+        </div>
+    </footer>
     <script src="portfolio.js"></script>
 </body>
 
