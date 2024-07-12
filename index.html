@@ -14,10 +14,11 @@
             <ul class="nav_list">
                 <li id="home_btn">Home</li>
                 <li id="about_btn">About me</li>
+                <li id="skills_btn">Skills</li>
                 <li id="project_btn">Projects</li>
                 <li id="contact_btn">Contact me</li>
             </ul>
-        </div>
+        </div> 
     </nav>
     <main class="sub_body" id="main_section">
         <section class="home inner_body" id="home_sec">
@@ -27,11 +28,29 @@
                         <p class="big_heading">Hey, I am Prince Soni</p>
                         <p class="home_text">High level of expertise in web design and development</p>
                         <p class="home_text_small">I consistently deliver top-quality work, ensuring innovative and
-                            effective digital solutions</p>
+                        effective digital solutions</p>
+                    </div>
+                    <div class="profile_div">
+                        <div class="resume">
+                            <a href="https://www.canva.com/design/DAGKkwH2tJE/_xxkKoVfkiRe74093rXPKw/view?utm_content=DAGKkwH2tJE&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank"><img src="images/icons8-resume-50.png"  class="icon_img" id="resume"></a>
+                        </div>
+                        <div class="leet_code">
+                            <a href="https://leetcode.com/u/princesoni200325/" target="_blank"><img src="images/icons8-level-up-your-coding-skills-and-quickly-land-a-job-50.png" class="icon_img" id="leet"></a>
+                        </div>
+                        <div class="git_hub">
+                            <a href="https://github.com/Prince-Sonii" target="_blank"><img src="images/icons8-github-50.png"  class="icon_img" id="github"></a>
+                        </div>
+                        <div class="linkedin">
+                            <a href="https://www.linkedin.com/in/prince-soni-4a7698264/" target="_blank"><img src="images/icons8-linkedin-50.png"  class="icon_img" id="linkedin"></a>
+                        </div>
+                        <div class="trans">
+                            <a href="https://www.linkedin.com/in/prince-soni-4a7698264/" target="_blank"><img src="images/icons8-linkedin-50.png"  class="icon_img" style="visibility: hidden;"></a>
+                        </div>
                     </div>
                 </div>
                 <div class="home_photo">
-                    <img src="images/3d-casual-life-code-editing.gif" alt="" class="pic_me">
+                    <img src="images/me_img.jpg" alt="" class="pic_me">
+                    <!-- <img src="images/3d-casual-life-code-editing.gif" alt="" class="pic_me"> -->
                 </div>
             </div>
         </section>
@@ -133,18 +152,18 @@
                 <div class="contact_tag">
                     <p class="big_heading contact_me_tag">Contact me</p>
                 </div>
-                <p class="home_text_small toast">email send successfully</p>
+                <p class="home_text_small toast" id="toast_msg">hey</p>
                 <div class="contact_container">
                     <div class="email_id">
-                        <input type="email" class="email_input" placeholder="name@gmail.com">
+                        <input type="email" id="get_email" class="email_input" placeholder="name@gmail.com">
                         <img src="images/icons8-email-30.png" alt="" class="email_img">
                     </div>
                     <div class="write_something">
-                        <textarea rows="7   " class="review" placeholder="Pen down your reflections"></textarea>
+                        <textarea rows="7" id="get_review" class="review" placeholder="Pen down your reflections"></textarea>
                         <img src="images/icons8-pen-30.png" alt="" class="pen_img">
                     </div>
                     <div class="submit">
-                        <button type="submit" class="submit_btn">Submit</button>
+                        <button type="submit" id="send_btn" class="submit_btn">Submit</button>
                     </div>
                 </div>
             </div>
@@ -157,6 +176,16 @@
             </div>
         </div>
     </footer>
+    <aside>
+        <div class="side_arrows">
+           <div class="">
+            <img src="images/icons8-arrow-35 (1).png" alt="" id="down_arrow">
+           </div>
+            <div class="">
+                <img src="images/icons8-arrow-35.png" alt="" id="up_arrow">
+            </div>
+        </div>
+    </aside>
     <script src="portfolio.js"></script>
 </body>
 
